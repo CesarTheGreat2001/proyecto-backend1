@@ -1,0 +1,32 @@
+###
+POST http://localhost:9000/api/heros HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "flask",
+    "NumDePelis": 1,
+    "company":"DC",
+    "poderes":"VELOCIDAD",
+    "ActRes":"ezra miller",
+    "team":"Justice Leage",
+    "NombreVerdadero":"Berry Allen"
+}
+###
+GET http://localhost:9000/api/heros HTTP/1.1
+###
+GET http://localhost:9000/api/heros/656b8430411200c067862c68 HTTP/1.1
+###
+PUT http://localhost:9000/api/heros/656f86246adf40786475c33c HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "flash",
+    "NumDePelis": 1,
+    "company":"DC",
+    "poderes":"VELOCIDAD",
+    "ActRes":"ezra miller",
+    "team":"Justice Leage",
+    "NombreVerdadero":"Berry Allen"
+}
+###
+DELETE  http://localhost:9000/api/heros/656f86246adf40786475c33c HTTP/1.1
